@@ -11,7 +11,7 @@
         @else
 
         <div class="text-center mb-4 border-b-[3px] border-primary pb-5">
-            <h1 class="text-primary font-bold text-3xl md:text-4xl mb-2">Бронирование аудитории</h1>
+            <h1 class="text-[#1a2a6c] font-bold text-3xl md:text-4xl mb-2">Бронирование аудитории</h1>
             <p class="text-secondary text-[1.1rem]">Заполните форму, отправьте заявку и мы её рассмотрим</p>
         </div>
 
@@ -48,7 +48,7 @@
             <div class="mb-4">
                 <label class="block font-semibold text-[#495057] mb-2">
                     Аудитория
-                    <span class="text-danger">*</span>
+                    <span class="text-[#D5473E]">*</span>
                 </label>
                 <x-select wire:model="classroom_id" required>
                     <option value="">Выберите аудиторию</option>
@@ -64,7 +64,7 @@
                 <div>
                     <label class="block font-semibold text-[#495057] mb-2">
                         Дата бронирования
-                        <span class="text-danger">*</span>
+                        <span class="text-[#D5473E]">*</span>
                     </label>
 
                     <div wire:ignore>
@@ -75,7 +75,7 @@
                 <div>
                     <label class="block font-semibold text-[#495057] mb-2">
                         Время бронирования
-                        <span class="text-danger">*</span>
+                        <span class="text-[#D5473E]">*</span>
                     </label>
 
                     <div class="flex flex-col md:flex-row gap-5 items-center">
@@ -103,7 +103,7 @@
             <div class="mb-4">
                 <label class="block font-semibold text-[#495057] mb-2">
                     Цель бронирования
-                    <span class="text-danger">*</span>
+                    <span class="text-[#D5473E]">*</span>
                 </label>
                 <x-input wire:model="purpose" type="textarea" placeholder="Собрание студсовета, репетиция, занятие..." rows="3" required/>
             </div>
@@ -122,14 +122,14 @@
                         <label class="flex items-center gap-2 cursor-pointer">
                             <input
                                 wire:model="is_tech_support" type="radio" value="1"
-                                class="w-4 h-4 text-primary accent-primary border-gray-300 focus:ring-primary">
+                                class="w-4 h-4 text-primary accent-[#1a2a6c] border-gray-300 focus:ring-primary">
                             <span>Да</span>
                         </label>
 
                         <label class="flex items-center gap-2 cursor-pointer">
                             <input
                                 wire:model="is_tech_support" type="radio" value="0"
-                                class="w-4 h-4 text-primary accent-primary border-gray-300 focus:ring-primary">
+                                class="w-4 h-4 text-primary accent-[#1a2a6c] border-gray-300 focus:ring-primary">
                             <span>Нет</span>
                         </label>
                     </div>
@@ -141,7 +141,7 @@
                 <x-input wire:model="user_comment" type="textarea" placeholder="Дополнительная информация, пожелания, особенности мероприятия..." rows="3"/>
             </div>
 
-            <div class="bg-warning text-[#684F06] rounded-[10px] p-5 mb-4">
+            <div class="bg-[#FFF2CE] text-[#684F06] rounded-[10px] p-5 mb-4">
                 <h5 class="font-bold text-lg mb-3">📋 Правила бронирования</h5>
                 <ul class="space-y-1 list-disc pl-5">
                     <li>Бронирование возможно только минимум за 24 часа до мероприятия</li>
