@@ -1,0 +1,65 @@
+# Зависимости
+/vendor
+/node_modules
+
+# Сборка фронтенда (пересобирается через npm run build)
+/public/build
+/public/hot
+/public/storage
+
+# Laravel
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+/storage/*.key
+/storage/logs
+/storage/framework/cache/data
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+
+# Секреты и конфигурация окружения
+.env
+.env.*
+!.env.example
+
+# Google Service Account, ключи API, сертификаты
+/storage/app/private/*
+!/storage/app/private/.gitignore
+*.pem
+*.p12
+*credentials*.json
+*service*account*.json
+auth.json
+
+# База данных (локальные данные)
+/database/*.sqlite
+/database/*.sqlite-journal
+
+# Тесты и отладка
+.phpunit.result.cache
+.phpunit.cache
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# IDE и редакторы
+/.idea
+/.vscode
+/.fleet
+*.swp
+*.swo
+*~
+
+# ОС
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Homestead / Vagrant
+Homestead.json
+Homestead.yaml
+/.vagrant
+
+# Прочее
+*.log
+.cache
