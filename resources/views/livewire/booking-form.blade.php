@@ -12,7 +12,7 @@
 
         <div class="text-center mb-4 border-b-[3px] border-primary pb-5">
             <h1 class="text-[#1a2a6c] font-bold text-3xl md:text-4xl mb-2">Бронирование аудитории</h1>
-            <p class="text-secondary text-[1.1rem]">Заполните форму, отправьте заявку и мы её рассмотрим</p>
+            <p class="text-[#6c757d] text-[1.1rem]">Заполните форму, отправьте заявку и мы её рассмотрим</p>
         </div>
 
         @if ($errors->any())
@@ -113,7 +113,7 @@
                 <div class="mb-4">
                     <label class="block font-semibold text-[#495057] mb-2">Необходимое оборудование</label>
                     <x-input wire:model="equipment" type="textarea" placeholder="Проектор, микрофоны, стулья..." rows="2"/>
-                    <small class="text-secondary text-sm">Оставьте пустым, если оборудование не требуется</small>
+                    <small class="text-[#6c757d] text-sm">Оставьте пустым, если оборудование не требуется</small>
                 </div>
 
                 <div class="bg-[#f8f9fa] rounded-[10px]">
@@ -163,11 +163,11 @@
             <p class="mt-3 text-primary font-semibold">Загрузка...</p>
         </div>
 
-        <div class="text-center mt-[30px] pt-5 mb-8 border-t border-[#e3e6f0] text-secondary text-[0.9rem]">
+        <div class="text-center mt-[30px] pt-5 mb-8 border-t border-[#e3e6f0] text-[#6c757d] text-[0.9rem]">
             <p>По вопросам обращайтесь: 8 (3412) 77-60-55, доб. 1371</p>
             <p class="mt-2">
                 Также вы можете подать заявку через
-                <a href="https://vk.com" target="_blank" class="text-primary hover:underline">VK бота</a>
+                <a href="https://vk.com" target="_blank" class="text-[#1a2a6c] hover:underline">VK бота</a>
             </p>
         </div>
 
